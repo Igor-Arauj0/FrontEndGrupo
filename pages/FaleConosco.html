@@ -37,7 +37,7 @@
         <div class="interface">
           <h2 class="titulo">FALE <span>CONOSCO</span></h2>
 
-          <form action="">
+          <form id="myForm" action="">
             <input
               type="text"
               name="nome"
@@ -58,7 +58,9 @@
               placeholder="Sua mensagem"
               required
             ></textarea>
-            <div class="btn-enviar"><input type="submit" value="ENVIAR" /></div>
+            <button onclick="enviarFormulario()" class="btn-enviar">
+              ENVIAR
+            </button>
           </form>
         </div>
         <!--interface-->
@@ -74,6 +76,7 @@
         const nome = document.getElementById("nome").value;
         const email = document.getElementById("email").value;
         const mensagem = document.getElementById("mensagem").value;
+        console.log(mensagem, email, nome);
 
         if (!nome || !email || !mensagem) {
           alert("Por favor, preencha todos os campos.");
@@ -87,11 +90,11 @@
         };
 
         // Armazena os dados no localStorage
+        alert("Formulário enviado com sucesso!");
         localStorage.setItem("dadosFormulario", JSON.stringify(dados));
 
         // Resetar os campos do formulário
         document.getElementById("myForm").reset();
-        alert("Formulário enviado com sucesso!");
       }
     </script>
   </body>
