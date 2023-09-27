@@ -25,16 +25,3 @@
   }
 }
 
-.carousel-item img:hover {
-  flex: 0 0 50%;
-  transition: transform 0.5s ease;
-  transform-origin: center center;
-  transform: scale(1.2);
-}
-
-.carousel-item img:not(:hover) {
-  flex: 0 0 50%;
-  transition: transform 0.2s ease;
-  transform-origin: center center; 
-  transform: scale(1); 
-}
