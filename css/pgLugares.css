@@ -1,11 +1,141 @@
+:root {
+  /* FUNDOS */
+  --color-bg-primary: #161b22; /* Cor de fundo primária */
+  --color-bg-secondary: #343a43; /* Cor de fundo secundária */
+  --color-bg-black: black;
+
+  /* TEXTO */
+  --text-color: #fafbfc; /* Cor do texto primária */
+  --text-color-secondary: #8b949e; /* Cor do texto secundária */
+
+  /* Cores de destaque (exemplo) */
+  --color-red: #da3633; /* Vermelho */
+  --color-green: #3fb950; /* Verde */
+  --color-orange: #e36209; /* Laranja */
+  --white-3: #e7a100;
+
+  /* MODO DIURNO */
+  --color-bg-primary-day: #fafbfc; /* Cor do fundo primária dia */
+  --color-bg-secondary-day: #d1d5da; /* Cor do fundo secundária dia */
+  --text-color-day: #101012; /* Cor do texto primária dia */
+  --text-color-secondary-day: #f6f8fa; /* Cor do texto secundária dia */
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,100&display=swap");
 
-p {
-  font-family: "Roboto";
-  text-align: start;
-  font-size: 20px;
+/* CONFIGURACOES GERAIS */
+body {
+  background-color: var(--color-bg-primary);
+  color: var(--text-color);
+  min-width: none;
 }
 
 main {
-  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+p {
+  font-family: "Roboto";
+  font-size: 20px;
+}
+
+p,
+h2 {
+  text-align: center;
+}
+
+img {
+  max-width: 700px;
+  width: 100%;
+  object-fit: cover;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+/* PRIMEIRA IMAGEM */
+.text-center {
+  box-shadow: 0px 0px 15px 0px var(--text-color);
+}
+
+.text-center img {
+  max-width: 100%;
+}
+
+/* PRIMEIRO TEXTO */
+.mt-4 {
+  padding: 15px;
+}
+
+.mt-4 .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.titulo {
+  font-size: 44px;
+}
+
+/* SEGUNDA IMAGEM */
+.col-md-6.order-1,
+.col-md-6.order-2 {
+  width: 100%;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+/* VIDEO */
+.col-md-6.order-2 video {
+  object-fit: cover;
+  width: 100%;
+}
+
+/* LISTA DE POUSADAS */
+
+.pousadas-list li {
+  margin-bottom: 5px;
+  height: 200px;
+  list-style: none;
+  transition: 0.5s ease-in-out;
+  box-shadow: inset 0px 0px 35px 5px var(--color-bg-black);
+  cursor: pointer;
+  background-position: center;
+  background-size: cover;
+}
+
+.pousadas-list li:hover {
+  box-shadow: inset 0px 0px 35px 15px var(--color-bg-black);
+}
+
+.pousadas-list li:hover .hover-titulo {
+  opacity: 1;
+  transform: scale(1.15);
+}
+
+.pousadas-list li a {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.pousadas-list .hover-titulo {
+  transition: 0.3s ease-in-out;
+  opacity: 0;
+  margin-bottom: 0;
+  padding: 25px;
+  font-weight: 700;
+  text-shadow: 2px 2px 11px rgba(0, 0, 0, 0.72);
 }
