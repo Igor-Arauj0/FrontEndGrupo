@@ -2,6 +2,7 @@
   /* FUNDOS */
   --color-bg-primary: #161b22; /* Cor de fundo primária */
   --color-bg-secondary: #343a43; /* Cor de fundo secundária */
+  --color-bg-black: black;
 
   /* TEXTO */
   --text-color: #fafbfc; /* Cor do texto primária */
@@ -16,6 +17,6 @@
   /* MODO DIURNO */
   --color-bg-primary-day: #fafbfc; /* Cor do fundo primária dia */
   --color-bg-secondary-day: #d1d5da; /* Cor do fundo secundária dia */
-  --text-color: #101012; /* Cor do texto primária dia */
+  --text-color-day: #101012; /* Cor do texto primária dia */
   --text-color-secondary-day: #f6f8fa; /* Cor do texto secundária dia */
 }
