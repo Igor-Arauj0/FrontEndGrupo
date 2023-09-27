@@ -1,13 +1,72 @@
+:root {
+  /* FUNDOS */
+  --color-bg-primary: #161b22; /* Cor de fundo primária */
+  --color-bg-secondary: #343a43; /* Cor de fundo secundária */
+  --color-bg-black: black;
+
+  /* TEXTO */
+  --text-color: #fafbfc; /* Cor do texto primária */
+  --text-color-secondary: #8b949e; /* Cor do texto secundária */
+
+  /* Cores de destaque (exemplo) */
+  --color-red: #da3633; /* Vermelho */
+  --color-green: #3fb950; /* Verde */
+  --color-orange: #e36209; /* Laranja */
+  --color-orange-secondary: #e7a100;
+
+  /* MODO DIURNO */
+  --color-bg-primary-day: #fafbfc; /* Cor do fundo primária dia */
+  --color-bg-secondary-day: #d1d5da; /* Cor do fundo secundária dia */
+  --text-color-day: #101012; /* Cor do texto primária dia */
+  --text-color-secondary-day: #f6f8fa; /* Cor do texto secundária dia */
+}
+
+body {
+  background-color: var(--color-bg-primary);
+}
+
+/* NAVBAR */
+.navbar {
+  background-color: var(--color-bg-black);
+}
+
+.navbar i,
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show,
+.dropdown-menu li a {
+  color: var(--text-color);
+}
+
+.dropdown-toggle {
+  color: var(--text-color);
+}
+
+.dropdown-toggle:hover {
+  color: var(--color-green);
+}
+
+.dropdown-menu {
+  background-color: var(--color-bg-black);
+}
+
+.drop .navbar-toggler {
+  border: 1px solid var(--color-bg-secondary);
+  padding: 5px;
+  border-radius: 5px;
+}
+/* FIM ESTILO NAVBAR */
+
+/* ESTILO DO FORMULARIO DE CONTATO */
+
 .titulo {
-  color: black;
+  color: var(--text-color);
   text-align: center;
 }
 
 .titulo span {
-  color: red;
+  color: var(--color-orange);
 }
 
-/* ESTILO DO FORMULARIO DE CONTATO */
 section.formulario {
   padding: 80px 4%;
 }
