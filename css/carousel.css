@@ -1,0 +1,26 @@
+
+
+.carousel-item{
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-item img{
+    object-fit: cover;
+}
+
+
+.slide{
+    width: 50%;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5); /* Inner shadow */;
+
+}
+
+main{
+    background-position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    height: 100vh;
+}

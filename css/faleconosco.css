@@ -1,0 +1,58 @@
+.titulo {
+  color: black;
+  text-align: center;
+}
+
+.titulo span {
+  color: red;
+}
+
+/* ESTILO DO FORMULARIO DE CONTATO */
+section.formulario {
+  padding: 80px 4%;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 40px;
+  border-radius: 5px;
+  background-color: black;
+}
+
+form input,
+form textarea {
+  width: 80%;
+  background-color: white;
+  border: 0;
+  border-radius: 10px;
+  outline: 0;
+  padding: 20px 15px;
+  color: black;
+  margin: 15px;
+}
+
+form textarea {
+  resize: none;
+  max-height: 200px;
+}
+
+form .btn-enviar {
+  margin-top: 20px;
+  text-align: center;
+}
+
+form .btn-enviar input {
+  width: 120px;
+  background-color: red;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s;
+}

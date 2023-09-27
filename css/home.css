@@ -1,0 +1,18 @@
+body{
+    background-color: #0d1117;
+}
+
+.div_header{
+    border-bottom: 1px solid #353434; /* 2px de largura, sólida, cor azul (hexadecimal) */
+    padding: 10px; /* Adicionando espaço interno para que a borda não encoste no conteúdo */
+    width: 100%;
+    height: 64px;
+    padding: 16px;
+    background-color: black;
+}
+
+main{
+    width: 100%;
+    padding: 16px;
+    height: 100px;
+}
