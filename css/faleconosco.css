@@ -23,6 +23,11 @@
 
 body {
   background-color: var(--color-bg-primary);
+  background-image: url(../img\ lugares/03.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
 }
 
 /* NAVBAR */
@@ -67,21 +72,18 @@ body {
   color: var(--color-orange);
 }
 
-section.formulario {
-  padding: 80px 4%;
-}
-
-form {
-  max-width: 500px;
+#myForm {
+  max-width: 400px;
+  height: 450px;
   margin: 0 auto;
-  padding: 15px;
+  padding: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: 10px;
   margin-top: 40px;
-  border-radius: 5px;
+  border-radius: 10px;
   background-color: black;
 }
 
@@ -97,6 +99,14 @@ form textarea {
   margin: 15px;
 }
 
+form input {
+  height: 15px;
+}
+
+form textarea {
+  height: 150px;
+}
+
 form textarea {
   resize: none;
   max-height: 200px;
@@ -105,13 +115,26 @@ form textarea {
 form .btn-enviar {
   margin-top: 20px;
   text-align: center;
-}
-
-form .btn-enviar input {
   width: 120px;
-  background-color: red;
+  background-color: var(--color-orange);
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
   color: white;
   font-weight: 700;
   cursor: pointer;
   transition: 0.2s;
+}
+
+.btn-enviar:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 0px 5px 0px var(--color-orange-secondary);
+}
+
+@media (max-width: 500px) {
+  #myForm {
+    max-width: 300px;
+    max-height: 450px;
+    padding: 20px;
+  }
 }

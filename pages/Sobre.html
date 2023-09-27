@@ -8,9 +8,85 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
     <link rel="stylesheet" href="../css/sobre.css" />
   </head>
   <body>
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./home.html"
+            ><i class="bi bi-airplane-engines"></i
+          ></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./home.html"
+                  >Início</a
+                >
+              </li>
+
+              <li class="nav-item nav-last">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="../pages/FaleConosco.html"
+                  >Fale Conosco</a
+                >
+              </li>
+
+              <!--DROPDOWN-->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Locais
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="../pages/Gramado.html"
+                      >Gramado</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../pages/Jeri.html"
+                      >Jericoacoara</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../pages/Lençois.html"
+                      >Lençóis Maranhenses</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <!--FIM DROPDOWN-->
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
     <h1>Sobre os integrantes:</h1>
     <main>
       <div class="container mt-5">
