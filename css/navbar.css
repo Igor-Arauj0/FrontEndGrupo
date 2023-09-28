@@ -23,7 +23,7 @@
 
 /* NAVBAR */
 .navbar {
-  background-color: var(--color-bg-black);
+  --navbar-bg-color: var(--color-bg-black);
 }
 
 .navbar i,
