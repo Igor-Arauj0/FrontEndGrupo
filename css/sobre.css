@@ -115,6 +115,12 @@ h1 {
   justify-content: flex-end;
   align-items: center;
   height: 100%;
+  color: var(--color-orange);
+}
+
+.icon-link:hover {
+  color: var(--color-orange-secondary);
+  transition: 0.8s;
 }
 
 .bi {
@@ -135,6 +141,7 @@ h1 {
 
   .col-md-4 {
     width: 100%;
+    height: fit-content;
   }
 
   h2 {
@@ -159,6 +166,8 @@ hr {
   background-color: rgba(12, 180, 202, 0.702);
   height: 2px;
 }
+<<<<<<< HEAD
+=======
 .modo-claro {
   --color-bg-primary: #fafbfc; /* Cor de fundo primária no modo claro */
   --color-bg-secondary: #d1d5da; /* Cor de fundo secundária no modo claro */
@@ -169,3 +178,4 @@ hr {
   --navbar-text-color: #101012; /* Cor do texto da barra de navegação no modo claro */
   transition: background-color 0.3s, color 0.3s;
 }
+>>>>>>> 5522fcb58d5b37e24c3dc82d8663a99fa27ce26a
