@@ -100,26 +100,23 @@ ul {
 }
 
 /* LISTA DE POUSADAS */
-
+.pousadas-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .pousadas-list li {
   margin-bottom: 5px;
   height: 200px;
+  width: 80%;
+  max-width: 800px;
   list-style: none;
-  transition: 0.5s ease-in-out;
-  box-shadow: inset 0px 0px 35px 5px var(black);
-  box-shadow: inset 0px 0px 35px 15px var(black);
+  transition: 0.3s ease-in-out;
+  box-shadow: inset 0px 0px 35px 15px var(--color-bg-black);
   cursor: pointer;
+  border-radius: 15px;
   background-position: center;
   background-size: cover;
-}
-
-.pousadas-list li:hover {
-  box-shadow: inset 0px 0px 35px 5px var(--color-bg-black);
-}
-
-.pousadas-list li:hover .hover-titulo {
-  opacity: 1;
-  transform: scale(1.15);
 }
 
 .pousadas-list li a {
@@ -135,12 +132,34 @@ ul {
 
 .pousadas-list .hover-titulo {
   transition: 0.3s ease-in-out;
-  opacity: 0;
+  opacity: 1;
+  transform: scale(1.15);
   margin-bottom: 0;
   padding: 25px;
   font-weight: 700;
-  text-shadow: 2px 2px 11px var(--color-bg-black);
+  text-shadow: 7px 7px 8px #000000;
 }
+
+@media (min-width: 700px) {
+  .pousadas-list li {
+    box-shadow: inset 0px 0px 35px 15px var(--color-bg-black);
+  }
+
+  .pousadas-list li:hover {
+    box-shadow: inset 0px 0px 35px 5px var(--color-bg-black);
+  }
+
+  .pousadas-list .hover-titulo {
+    opacity: 0;
+  }
+
+  .pousadas-list li:hover .hover-titulo {
+    opacity: 1;
+    transform: scale(1.15);
+  }
+}
+
+/* FOOTER */
 
 footer {
   text-align: center;
