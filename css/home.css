@@ -79,6 +79,7 @@ hr {
 }
 
 .grid {
+  grid-auto-flow: row;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr; /* Duas colunas de tamanhos diferentes */
@@ -343,4 +344,11 @@ hr {
   background-color: var(--navbar-bg-color);
   color: var(--navbar-text-color);
   transition: background-color 0.3s, color 0.3s;
+}
+
+@media(max-width: 1480px){
+  .grid{
+    display: none;
+  }
+
 }
