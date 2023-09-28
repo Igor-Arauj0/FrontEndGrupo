@@ -5,22 +5,24 @@
 
 .carousel-inner {
   height: 100%;
-  
+  border-radius: 30px;
 }
 
 .carousel-item {
   height: 100%;
+  border-radius: 30px;
 }
 
 .carousel-item img {
   height: 100%;
   object-fit: cover;
+  border-radius: 30px;
 }
 
 @media (min-width: 500px) {
   .slide {
-    width: 50%;
-    height: 50%;
+    width: 75%;
+    height: 80%;
     
   }
 }
