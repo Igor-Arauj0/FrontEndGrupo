@@ -3,17 +3,137 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/fozdoiguacu.css" />
+
+    <!--BOOTSTRAP-->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+      defer
+    ></script>
+
+    <!--BOOTSTRAP ICONS-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+
+    <link rel="stylesheet" href="../css/pgLugares.css" />
+    <link rel="stylesheet" href="../css/navbar.css" />
+
     <title>PARANÁ - FOZ DO IGUAÇU</title>
   </head>
 
   <body>
+    <header>
+      <!--NAV BAR-->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./home.html"
+            ><i class="bi bi-airplane-engines"></i
+          ></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./home.html"
+                  >Início</a
+                >
+              </li>
+
+              <!--DROPDOWN-->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Locais
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="../pages/Bonito.html"
+                      >Bonito</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../pages/CaldasNovas.html"
+                      >Caldas Novas</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../pages/fozIguaçu.html"
+                      >Foz do Iguaçu</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../pages/Gramado.html"
+                      >Gramado</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../pages/ibitipoca.html"
+                      >Ibitipoca</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../pages/Jeri.html"
+                      >Jericoacoara</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../pages/Lençois.html"
+                      >Lençóis Maranhenses</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <!--FIM DROPDOWN-->
+
+              <li class="nav-item nav-last">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="../pages/Sobre.html"
+                  >Sobre</a
+                >
+              </li>
+
+              <li class="nav-item nav-last">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="../pages/FaleConosco.html"
+                  >Fale Conosco</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!--FIM NAV BAR-->
+    </header>
     <div class="text-center">
       <img
         src="../Imagens/FozDoIguaçu/CapaCataratasBrasil-FozIguaçux.jpg"
@@ -65,7 +185,7 @@
     </section>
 
     <section class="mt-4">
-      <h2>Pousadas e hotéis em Foz do Iguaçu</h2>
+      <h2>Pousadas e hotéis em Foz do Iguaçu:</h2>
       <p>
         Os melhores lugares para ficar em Foz do Iguaçu são no centro e nas
         regiões próximas da Avenida das Cataratas (avenida que liga o centro ao
@@ -120,13 +240,13 @@
         Foz do Iguaçu, a terra das Cataratas! A cidade que hospeda as belíssimas
         quedas d’água consagradas entre as 7 Maravilhas da Natureza já foi
         considerada um dos melhores lugares turísticos do mundo e é o segundo
-        destino mais turístico do Brasil – e não é pra menos! Afinal, os
-        passeios em Foz do Iguaçu são maravilhosos e marcantes. <br />Mas há
-        quem queira ir além das Cataratas do Iguaçu, e normalmente a segunda
-        opção entre os passeios em Foz do Iguaçu é o gracioso Parque das Aves,
-        ou então a poderosa Usina Hidrelétrica de Itaipu, que também levou o
-        título de uma das 7 Maravilhas da Construção do Mundo Moderno – são
-        tantas maravilhas num só lugar que a gente até se perde, né?!
+        destino mais turístico do Brasil e não é pra menos! Afinal, os passeios
+        em Foz do Iguaçu são maravilhosos e marcantes. <br />Mas há quem queira
+        ir além das Cataratas do Iguaçu, e normalmente a segunda opção entre os
+        passeios em Foz do Iguaçu é o gracioso Parque das Aves, ou então a
+        poderosa Usina Hidrelétrica de Itaipu, que também levou o título de uma
+        das 7 Maravilhas da Construção do Mundo Moderno são tantas maravilhas
+        num só lugar que a gente até se perde, né?!
       </p>
       <ul>
         <li>
