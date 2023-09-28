@@ -4,7 +4,7 @@
    GUIA VIAJANTE
 </h1>
 <div align="center">
-  <img align="right" width="200" height="300" src="../FrontEndGrupo/Imagens/imaRead/RM.png">
+  <img align="right" width="200" height="300" src="https://github.com/Igor-Arauj0/FrontEndGrupo/blob/361e14546490522467f4e1c0e5325da0256500cb/Imagens/imaRead/RM.png">
 </div>
     
    ✔ 
@@ -61,7 +61,7 @@ Com uma área tão grande e uma grande variedade de coisas para fazer, planejar 
 
 ## Autores do projeto
 
-| [<img loading="lazy" src="../FrontEndGrupo/Imagens/imaRead/Asael.png" width=115><br><sub>ASAEL SEIFFERT</sub>](https://github.com/LexSeiffert) | [<img loading="lazy" src="../FrontEndGrupo/Imagens/imaRead/Bernardo.png" width=115><br><sub>BERNARDO REUTHER</sub>](https://github.com/YoloDesu) | [<img loading="lazy" src="../FrontEndGrupo/Imagens/imaRead/Icaro.png" width=115><br><sub>ÍCARO NASCIMENTO</sub>](https://github.com/ikaro460) | [<img loading="lazy" src="../FrontEndGrupo/Imagens/imaRead/Igor.png" width=115><br><sub>IGOR ARAUJO</sub>](https://github.com/Igor-Arauj0) | [<img loading="lazy" src="../FrontEndGrupo/Imagens/imaRead/Julia.png" width=115><br><sub>JULIA FREITAS</sub>](https://github.com/JuFMacedo) | [<img loading="lazy" src="../FrontEndGrupo/Imagens/imaRead/Luciana.png" width=115><br><sub>LUCIANA BRAND</sub>](https://github.com/lucianabrand) |
+| [<img loading="lazy" src="https://github.com/Igor-Arauj0/FrontEndGrupo/blob/361e14546490522467f4e1c0e5325da0256500cb/Imagens/imaRead/Asael.png" width=115><br><sub>ASAEL SEIFFERT</sub>](https://github.com/LexSeiffert) | [<img loading="lazy" src="https://github.com/Igor-Arauj0/FrontEndGrupo/blob/361e14546490522467f4e1c0e5325da0256500cb/Imagens/imaRead/Bernardo.png" width=115><br><sub>BERNARDO REUTHER</sub>](https://github.com/YoloDesu) | [<img loading="lazy" src="https://github.com/Igor-Arauj0/FrontEndGrupo/blob/361e14546490522467f4e1c0e5325da0256500cb/Imagens/imaRead/Icaro.png" width=115><br><sub>ÍCARO NASCIMENTO</sub>](https://github.com/ikaro460) | [<img loading="lazy" src="https://github.com/Igor-Arauj0/FrontEndGrupo/blob/361e14546490522467f4e1c0e5325da0256500cb/Imagens/imaRead/Igor.png" width=115><br><sub>IGOR ARAUJO</sub>](https://github.com/Igor-Arauj0) | [<img loading="lazy" src="https://github.com/Igor-Arauj0/FrontEndGrupo/blob/361e14546490522467f4e1c0e5325da0256500cb/Imagens/imaRead/Julia.png" width=115><br><sub>JULIA FREITAS</sub>](https://github.com/JuFMacedo) | [<img loading="lazy" src="https://github.com/Igor-Arauj0/FrontEndGrupo/blob/361e14546490522467f4e1c0e5325da0256500cb/Imagens/imaRead/Luciana.png" width=115><br><sub>LUCIANA BRAND</sub>](https://github.com/lucianabrand) |
 | :--------------------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------: |
 
 👥[Voltar ao Índice](#índice)
