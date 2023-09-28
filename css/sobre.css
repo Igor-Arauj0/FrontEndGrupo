@@ -115,6 +115,12 @@ h1 {
   justify-content: flex-end;
   align-items: center;
   height: 100%;
+  color: var(--color-orange);
+}
+
+.icon-link:hover {
+  color: var(--color-orange-secondary);
+  transition: 0.8s;
 }
 
 .bi {
@@ -135,6 +141,7 @@ h1 {
 
   .col-md-4 {
     width: 100%;
+    height: fit-content;
   }
 
   h2 {
@@ -146,7 +153,7 @@ h1 {
   }
 }
 
-footer{
+footer {
   text-align: center;
   background: #000000;
   width: 100%;
@@ -155,7 +162,7 @@ footer{
   left: 0;
 }
 
-hr{
+hr {
   background-color: rgba(12, 180, 202, 0.702);
   height: 2px;
 }
