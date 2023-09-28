@@ -106,13 +106,14 @@ ul {
   list-style: none;
   transition: 0.5s ease-in-out;
   box-shadow: inset 0px 0px 35px 5px var(--color-bg-black);
+  box-shadow: inset 0px 0px 35px 15px var(--color-bg-black);
   cursor: pointer;
   background-position: center;
   background-size: cover;
 }
 
 .pousadas-list li:hover {
-  box-shadow: inset 0px 0px 35px 15px var(--color-bg-black);
+  box-shadow: inset 0px 0px 35px 5px var(--color-bg-black);
 }
 
 .pousadas-list li:hover .hover-titulo {
