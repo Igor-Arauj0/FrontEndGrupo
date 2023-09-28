@@ -34,6 +34,14 @@ body {
   padding: 16px;
   background-color: black;
 }
+h1 {
+  background-position: relative;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 300%;
+  font-weight: bold;
+  color: var(--text-color);
+}
 
 main {
   background-position: relative;
@@ -43,4 +51,312 @@ main {
   padding: 0;
   margin: 0;
   height: 100%;
+}
+
+footer {
+  text-align: center;
+  background: var(--color-bg-black);
+  width: 100%;
+  height: 100px;
+  bottom: 0;
+  left: 0;
+}
+
+hr {
+  background-color: rgba(12, 180, 202, 0.702);
+  height: 2px;
+}
+
+.mosaico {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.foto {
+  overflow: hidden;
+  border: 1px solid #ddd;
+}
+
+.foto img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.grid {
+  grid-auto-flow: row;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* Duas colunas de tamanhos diferentes */
+  grid-auto-rows: 200px; /* Altura fixa das linhas */
+  gap: 10px;
+  width: 1100px;
+}
+
+.item {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilos específicos para cada item */
+.item1 {
+  grid-column: span 2;
+  grid-row: span 2;
+  zoom: 90%;
+}
+.item2 {
+  grid-column: span 1;
+  grid-row: span 2;
+  zoom: 92%;
+}
+.item3 {
+  grid-column: span 1;
+  grid-row: span 3;
+  zoom: 80%;
+}
+.item4 {
+  grid-column: span 2;
+  grid-row: span 1;
+  zoom: 45%;
+}
+.item5 {
+  grid-column: span 2;
+  grid-row: span 2;
+  zoom: 92%;
+}
+.item6 {
+  grid-column: span 1;
+  grid-row: span 2;
+  zoom: 73%;
+}
+.item7 {
+  grid-column: span 1;
+  grid-row: span 2;
+  zoom: 80%;
+}
+.item8 {
+  grid-column: span 1;
+  grid-row: span 2;
+  zoom: 66%;
+}
+.item9 {
+  grid-column: span 1;
+  grid-row: span 2;
+  zoom: 70%;
+}
+.item10 {
+  grid-column: span 2;
+  grid-row: span 2;
+  zoom: 73%;
+}
+
+/* Estilos para as imagens dentro dos itens */
+.item img:hover {
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+  flex: 0 0 100%;
+  transition: transform 0.5s ease;
+  transform-origin: center center;
+  transform: scale(1.1);
+}
+
+/*Estilo para posicionar o texto acima das imagens*/
+
+.item {
+  position: relative;
+}
+
+.cidade-bonito {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  padding: 5px 10px;
+  font-size: 200%;
+  font-weight: bold;
+  z-index: 1;
+}
+.cidade-caldas {
+  position: absolute;
+  top: 4%;
+  left: 20px;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  padding: 5px 10px;
+  font-size: 200%;
+  font-weight: bold;
+  z-index: 1;
+}
+
+.cidade-foz {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  padding: 5px 10px;
+  font-size: 200%;
+  font-weight: bold;
+  z-index: 1;
+}
+.cidade-gramado {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  padding: 5px 10px;
+  font-size: 350%;
+  font-weight: bold;
+  z-index: 1;
+}
+.cidade-jalapao {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  padding: 5px 10px;
+  font-size: 200%;
+  font-weight: bold;
+  z-index: 1;
+}
+.cidade-ibitipoca {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  padding: 5px 10px;
+  font-size: 200%;
+  font-weight: bold;
+  z-index: 1;
+}
+.cidade-jeri {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  padding: 5px 10px;
+  font-size: 200%;
+  font-weight: bold;
+  z-index: 1;
+}
+.cidade-rio {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  padding: 5px 10px;
+  font-size: 200%;
+  font-weight: bold;
+  z-index: 1;
+}
+.cidade-manaus {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  padding: 5px 10px;
+  font-size: 200%;
+  font-weight: bold;
+  z-index: 1;
+}
+
+.cidade-lencois {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  padding: 5px 10px;
+  font-size: 200%;
+  font-weight: bold;
+  z-index: 1;
+}
+
+.mosaico {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.foto {
+  overflow: hidden;
+  border: 1px solid #ddd;
+}
+
+.foto img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.grid {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: 200px;
+  gap: 10px;
+  width: 1100px;
+}
+
+.item {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+
+.item img:not(:hover) {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  flex: 0 0 100%;
+  transition: transform 0.2s ease;
+  transform-origin: center center;
+  transform: scale(1);
+}
+
+.item img {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
+}
+/* Estilos para o modo claro */
+.modo-claro {
+  --color-bg-primary: white;
+  --color-bg-secondary: #f0f0f0;
+  --text-color: black;
+  --text-color-secondary: #777;
+  --color-bg-black: white;
+  transition: background-color 0.3s, color 0.3s;
+  color: var(--text-color-day);
+}
+
+/* Estilos para a barra de navegação */
+.navbar {
+  background-color: var(--navbar-bg-color);
+  color: var(--navbar-text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+@media(max-width: 1120px){
+  .grid{
+    display: none;
+  }
 }

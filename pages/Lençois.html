@@ -3,35 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="icon" href="../img lugares/mundo.png" type="image/x-icon" />
+
     <!--BOOTSTRAP-->
     <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-    crossorigin="anonymous"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
     />
     <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"
-    defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+      defer
     ></script>
-    
+
     <!--BOOTSTRAP ICONS-->
     <link
-     rel="stylesheet"
-     href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
-     />
-     
-     <link rel="stylesheet" href="../css/navbar.css" />
-     <link rel="stylesheet" href="../css/pgLugares.css" />
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/pgLugares.css" />
 
     <title>MARANHÃO - LENÇÓIS MARANHENSES</title>
   </head>
 
-  <body>
-
+  <body id="pagina">
     <header>
       <!--NAV BAR-->
       <nav class="navbar navbar-expand-lg">
@@ -61,6 +62,72 @@
                 >
               </li>
 
+              <!--DROPDOWN-->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Locais
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="../pages/Bonito.html"
+                      >Bonito</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../pages/CaldasNovas.html"
+                      >Caldas Novas</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../pages/fozIguaçu.html"
+                      >Foz do Iguaçu</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../pages/Gramado.html"
+                      >Gramado</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../pages/ibitipoca.html"
+                      >Ibitipoca</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../pages/jalapao.html"
+                      >Jalapão</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../pages/Jeri.html"
+                      >Jericoacoara</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../pages/Lençois.html"
+                      >Lençóis Maranhenses</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../pages/manaus.html"
+                      >Manaus</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../pages/rioJaneiro.html"
+                      >Rio de Janeiro</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <!--FIM DROPDOWN-->
+
               <li class="nav-item nav-last">
                 <a
                   class="nav-link active"
@@ -78,39 +145,9 @@
                   >Fale Conosco</a
                 >
               </li>
-
-              <!--DROPDOWN-->
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Locais
-                </a>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a class="dropdown-item" href="../pages/Gramado.html"
-                      >Gramado</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="../pages/Jeri.html"
-                      >Jericoacoara</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="../pages/Lençois.html"
-                      >Lençóis Maranhenses</a
-                    >
-                  </li>
-                </ul>
-              </li>
-              <!--FIM DROPDOWN-->
             </ul>
           </div>
+          <button style="background:none;" class="modo-claro"><img style="zoom: 8%;" src="../img lugares/icone generico de brilho.png" alt=""></button>
         </div>
       </nav>
       <!--FIM NAV BAR-->
@@ -119,137 +156,155 @@
     <main>
       <div class="text-center">
         <img
-        src="../Imagens/LENCOIS MARANHENSES/CAPA.jpg"
-        alt="Lagoa azul formada por água de chuva no meio de montanhas de areias"
-        width="70%"
-        height="50%"
+          src="../Imagens/LENCOIS_MARANHENSES/Lencois.jpg"
+          alt="Lagoa azul formada por água de chuva no meio de montanhas de areias"
+          width="70%"
+          height="50%"
         />
       </div>
-      
-      <section class="mt-4">
+
+      <section class="mt-4 sobre">
         <h2>Sobre os Lençóis Maranhenses:</h2>
-        
+
         <p>
           O Parque Nacional dos Lençóis Maranhenses é uma verdadeira pérola em
-          território nacional. É um destino perfeito para quem gosta de natureza e
-          busca uma aventura diferente para as férias. Os 155 mil hectares que
-          compõem o deserto brasileiro dos Lençóis Maranhenses tem atividades para
-          ocupar vários dias de viagem (nós recomendamos pelo menos seis para
-          montar o roteiro). Entre as mais indispensáveis estão as caminhadas pelo
-          maior campo de Dunas do Brasil, nadar em lagoas de água doce cristalinas
-        e azul turquesa, interagir com a comunidade local e terminar todos os
-        dias com um pôr do sol surreal.
-      </p>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 order-1 mt-3">
-            <img
-              src="../Imagens/LENCOIS MARANHENSES/lagoa.jpeg"
-              alt="Lagoa azul formada por água de chuva no meio de montanhas de areias"
-              width="90%"
-              height="auto"
-              class="mb-0"
-            />
-          </div>
-          <div class="col-md-6 order-2 mt-3">
-            <video width="680" height="380" controls>
-              <source
-              src="../Imagens/LENCOIS MARANHENSES/Video Principal.mp4"
-              type="video/mp4"
+          território nacional. É um destino perfeito para quem gosta de natureza
+          e busca uma aventura diferente para as férias. Os 155 mil hectares que
+          compõem o deserto brasileiro dos Lençóis Maranhenses tem atividades
+          para ocupar vários dias de viagem (nós recomendamos pelo menos seis
+          para montar o roteiro). Entre as mais indispensáveis estão as
+          caminhadas pelo maior campo de Dunas do Brasil, nadar em lagoas de
+          água doce cristalinas e azul turquesa, interagir com a comunidade
+          local e terminar todos os dias com um pôr do sol surreal.
+        </p>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 order-1 mt-3">
+              <img
+                src="../Imagens/LENCOIS_MARANHENSES/lagoa.jpeg"
+                alt="Lagoa azul formada por água de chuva no meio de montanhas de areias"
+                width="90%"
+                height="auto"
+                class="mb-0"
               />
-              Seu navegador não suporta o elemento de vídeo.
-            </video>
+            </div>
+            <div class="col-md-6 order-2 mt-3">
+              <video width="680" height="380" controls>
+                <source
+                  src="../Imagens/LENCOIS_MARANHENSES/Video Principal.mp4"
+                  type="video/mp4"
+                />
+                Seu navegador não suporta o elemento de vídeo.
+              </video>
+            </div>
           </div>
+        </div>
+      </section>
+
+      <section class="mt-4 pousadas">
+        <h2>Pousadas e Hotéis nos Lençóis Maranhenses:</h2>
+        <p>
+          Os mais variados tipos de acomodação estão presentes na vila, desde
+          singelas e pequenas pousadas familiares a luxuosos hotéis. Tudo
+          depende do que você está disposto a pagar e receber.
+        </p>
+        <ul class="pousadas-list">
+          <li
+            class="hover-img box"
+            style="
+              background-image: url(../Imagens/LENCOIS_MARANHENSES/Porto\ Preguiça-\ Lencois.jpg);
+            "
+          >
+            <a
+              href="https://www.booking.com/hotel/br/porto-preguiassas-resort.html?aid=336111&label=GUIA-tabela-home-Lencois_Maranhenses-10113__&lang=pt-br"
+              target="_blank"
+            >
+              <p class="hover-titulo">Porto Preguiças</p>
+            </a>
+          </li>
+          <li
+            class="hover-img box"
+            style="
+              background-image: url(../Imagens/LENCOIS_MARANHENSES/Pousada\ Do\ Porto-\ Lencois.jpg);
+            "
+          >
+            <a
+              href="https://www.booking.com/hotel/br/pousada-do-porto-barreirinhas.html?aid=336111&label=GUIA-tabela-home-Lencois_Maranhenses-10113__&lang=pt-br"
+              target="_blank"
+            >
+              <p class="hover-titulo">Pousada do Porto</p>
+            </a>
+          </li>
+          <li
+            class="hover-img box"
+            style="
+              background-image: url(../Imagens/LENCOIS_MARANHENSES/TocadosAventureiros-Lencois.jpg);
+            "
+          >
+            <a
+              href="https://www.booking.com/hotel/br/pousada-toca-dos-aventureiros.html?aid=336111&label=GUIA-tabela-home-Lencois_Maranhenses-10113__&lang=pt-br#availability
+          "
+              target="_blank"
+            >
+              <p class="hover-titulo">Toca dos Aventureiros</p>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="mt-4">
+        <h2>O que fazer nos Lençóis Maranhenses:</h2>
+        <p>
+          O Parque Nacional dos Lençóis Maranhenses ocupa uma área de 155 mil
+          hectares e é considerado o maior parque de dunas do Brasil. A área
+          protegida é enorme, porém a região dos Lençóis Maranhenses é ainda
+          maior que o Parque Nacional. Entre os passeios mais procurados por lá
+          estão o Circuito da Lagoa Azul, o Circuito da Lagoa Bonita, a visita à
+          Lagoa das Emendadas e ao Canto de Atins. Certamente passeios
+          imperdíveis para quem vai aos Lençóis Maranhenses.
+        </p>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 order-1 mt-3">
+              <img
+                src="../Imagens/LENCOIS_MARANHENSES/sobrevoo-lençois.jpg"
+                alt="Lagoa azul formada por água de chuva no meio de montanhas de areias"
+                width="90%"
+                height="auto"
+                class="mb-0"
+              />
+            </div>
+            <div class="col-md-6 order-2 mt-3">
+              <img
+                src="../Imagens/LENCOIS_MARANHENSES/LagoaAzul.jpg"
+                alt="Lagoa azul formada por água de chuva no meio de montanhas de areias"
+                width="90%"
+                height="auto"
+                class="mb-0"
+              />
+            </div>
           </div>
         </div>
       </section>
 
       <section class="mt-4">
-      <h2>Pousadas e Hotéis nos Lençóis Maranhenses:</h2>
-      <p>
-        Os mais variados tipos de acomodação estão presentes na vila, desde
-        singelas e pequenas pousadas familiares a luxuosos hotéis. Tudo depende
-        do que você está disposto a pagar e receber.
-      </p>
-      <ul>
-        <li>
-          <a
-          href="https://www.booking.com/hotel/br/porto-preguiassas-resort.html?aid=336111&label=GUIA-tabela-home-Lencois_Maranhenses-10113__&lang=pt-br"
-          >
-          <h5>Porto Preguiça Resort</h5></a
-          >
-        </li>
-        <img
-        src="../Imagens/LENCOIS MARANHENSES/Porto Preguiça- Lencois.jpg"
-        alt="Grande Resort com piscina com fundo de areia, com várias acomodações.Em volta do resort é coberto por natureza verde"
-        width="50%"
-        height="auto"
-        />
-        <li>
-          <a
-          href="https://www.booking.com/hotel/br/pousada-do-porto-barreirinhas.html?aid=336111&label=GUIA-tabela-home-Lencois_Maranhenses-10113__&lang=pt-br"
-          >
-            <h5>Pousada Do Porto</h5>
-          </a>
-        </li>
-        <img
-          src="../Imagens/LENCOIS MARANHENSES/Pousada Do Porto- Lencois.jpg"
-          alt="Pousada aconchegante com vista para o rio"
-          width="50%"
-          height="auto"
-          class="mb-4"
-          />
-          <li>
-          <a
-          href="https://www.booking.com/hotel/br/pousada-toca-dos-aventureiros.html?aid=336111&label=GUIA-tabela-home-Lencois_Maranhenses-10113__&lang=pt-br#availability
-            "
-            >
-            <h5>Pousada Toca dos Aventureiros</h5>
-          </a>
-        </li>
-        <img
-          src="../Imagens/LENCOIS MARANHENSES/TocadosAventureiros-Lencois.jpg"
-          alt="Pousada rústica, confortável"
-          width="50%"
-          height="auto"
-          class="mb-4"
-          />
-        </ul>
-      </section>
-      
-      <section class="mt-4">
-        <h2>O que fazer nos Lençóis Maranhenses:</h2>
+        <h2>Quando ir nos Lençóis Maranhenses:</h2>
         <p>
-          O Parque Nacional dos Lençóis Maranhenses ocupa uma área de 155 mil
-        hectares e é considerado o maior parque de dunas do Brasil. A área
-        protegida é enorme, porém a região dos Lençóis Maranhenses é ainda maior
-        que o Parque Nacional. Entre os passeios mais procurados por lá estão o
-        Circuito da Lagoa Azul, o Circuito da Lagoa Bonita, a visita à Lagoa das
-        Emendadas e ao Canto de Atins. Certamente passeios imperdíveis para quem
-        vai aos Lençóis Maranhenses.
-      </p>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 order-1 mt-3">
-            <img
-              src="../Imagens/LENCOIS MARANHENSES/sobrevoo-lençois.jpg"
-              alt="Lagoa azul formada por água de chuva no meio de montanhas de areias"
-              width="90%"
-              height="auto"
-              class="mb-0"
-              />
-            </div>
-          <div class="col-md-6 order-2 mt-3">
-            <img
-            src="../Imagens/LENCOIS MARANHENSES/LagoaAzul.jpg"
-            alt="Lagoa azul formada por água de chuva no meio de montanhas de areias"
-            width="90%"
-            height="auto"
-            class="mb-0"
-            />
-          </div>
-        </section>
-      </main>
+          Ao viajar para os Lençóis Maranhenses é preciso estar atento ao
+          calendário para ver o fenômeno das lagoas em meio às dunas. A alta
+          temporada dos Lençóis Maranhenses acontece durante e logo após as
+          chuvas, especialmente entre os meses de abril e agosto. No auge da
+          seca, de outubro a dezembro, quase todas as lagoas desaparecem e a
+          paisagem, cheia de porções de água, se transforma em um imenso
+          deserto. A verdade, entretanto, é que os Lençóis Maranhenses são
+          lindos durante todo o ano, tendo ou não lagoas cheias.
+        </p>
+      </section>
+    </main>
+    <footer class="fixarRodape">
+      <hr class="hr" />
+      <p>&copy; Guia Viajante (2023)</p>
+    </footer>
+    <script src="../js/light-mode.js"></script>
   </body>
 </html>
-      

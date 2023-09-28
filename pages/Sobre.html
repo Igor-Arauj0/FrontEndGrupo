@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sobre</title>
+    <link rel="icon" href="../img lugares/mundo.png" type="image/x-icon" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -14,8 +15,9 @@
     />
     <link rel="stylesheet" href="../css/sobre.css" />
   </head>
-  <body>
+  <body id="pagina">
     <header>
+      <!--NAV BAR-->
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
           <a class="navbar-brand" href="./home.html"
@@ -43,15 +45,6 @@
                 >
               </li>
 
-              <li class="nav-item nav-last">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="../pages/FaleConosco.html"
-                  >Fale Conosco</a
-                >
-              </li>
-
               <!--DROPDOWN-->
               <li class="nav-item dropdown">
                 <a
@@ -65,8 +58,33 @@
                 </a>
                 <ul class="dropdown-menu">
                   <li>
+                    <a class="dropdown-item" href="../pages/Bonito.html"
+                      >Bonito</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../pages/CaldasNovas.html"
+                      >Caldas Novas</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../pages/fozIguaçu.html"
+                      >Foz do Iguaçu</a
+                    >
+                  </li>
+                  <li>
                     <a class="dropdown-item" href="../pages/Gramado.html"
                       >Gramado</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../pages/ibitipoca.html"
+                      >Ibitipoca</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../pages/jalapao.html"
+                      >Jalapão</a
                     >
                   </li>
                   <li>
@@ -79,122 +97,173 @@
                       >Lençóis Maranhenses</a
                     >
                   </li>
+                  <li>
+                    <a class="dropdown-item" href="../pages/manaus.html"
+                      >Manaus</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../pages/rioJaneiro.html"
+                      >Rio de Janeiro</a
+                    >
+                  </li>
                 </ul>
               </li>
               <!--FIM DROPDOWN-->
+              
+              </li>
+
+              <li class="nav-item nav-last">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="../pages/FaleConosco.html"
+                  >Fale Conosco</a
+                >
+              </li>
             </ul>
           </div>
+          <button style="background:none;" class="modo-claro"><img style="zoom: 8%;" src="../img lugares/icone generico de brilho.png" alt=""></button>
         </div>
       </nav>
+      <!--FIM NAV BAR-->
     </header>
     <h1>Sobre os integrantes:</h1>
-    <main>
+
+
       <div class="container mt-5">
-        <div class="row">
+        <div class="row mt-4">
           <div class="col-md-4">
-            <!-- Espaço para a foto da Pessoa 1 -->
-            <img src="Pessoa1.jpg" alt="Foto da Pessoa 1" class="img-fluid" />
+            <img src="../Imagens/FotosSobre/asael.jpeg" alt="Foto do Asael" class="img-fluid" />
           </div>
           <div class="col-md-8">
-            <!-- Espaço para as informações da Pessoa 1 -->
-            <h2>Nome da Pessoa 1</h2>
+            <h2>Asael Seiffert</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-              nec augue at libero cursus varius a at quam.
+              Cursando a matéria de FrontEnd no Serratec.
               <br />
-              <a href="#">Link para o perfil</a>
+               <div class="d-flex justify-content-center">              
+              <a href="https://github.com/LexSeiffert" target="_blank" class="icon-link me-3">
+                <i class="bi bi-github"></i>
+              </a>             
+              <a href="https://www.linkedin.com/in/asael-seiffert-34a048262/" target="_blank" class="icon-link">
+                <i class="bi bi-linkedin"></i>
+              </a>
+            </div>
             </p>
           </div>
         </div>
 
         <div class="row mt-4">
           <div class="col-md-4">
-            <!-- Espaço para a foto da Pessoa 2 -->
-            <img src="Pessoa2.jpg" alt="Foto da Pessoa 2" class="img-fluid" />
+            <img src="../Imagens/FotosSobre/note.png" alt="Foto do Bernardo" class="img-fluid" />
           </div>
           <div class="col-md-8">
-            <!-- Espaço para as informações da Pessoa 2 -->
-            <h2>Nome da Pessoa 2</h2>
+            <h2>Bernardo Granja</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-              nec augue at libero cursus varius a at quam.
+              Cursando a matéria de FrontEnd no Serratec.
               <br />
-              <a href="#">Link para o perfil</a>
+              <div class="d-flex justify-content-center">              
+                <a href="https://github.com/YoloDesu" target="_blank" class="icon-link me-3">
+                  <i class="bi bi-github"></i>
+                </a>             
+                <a href="https://www.linkedin.com/in/bernardoprogrammer/" target="_blank" class="icon-link">
+                  <i class="bi bi-linkedin"></i>
+                </a>
+              </div>
             </p>
           </div>
         </div>
 
         <div class="row mt-4">
           <div class="col-md-4">
-            <!-- Espaço para a foto da Pessoa 3 -->
-            <img src="Pessoa3.jpg" alt="Foto da Pessoa 3" class="img-fluid" />
+            <img src="../Imagens/FotosSobre/icaro.jpeg" alt="Foto do Ícaro" class="img-fluid" />
           </div>
           <div class="col-md-8">
-            <!-- Espaço para as informações da Pessoa 3 -->
-            <h2>Nome da Pessoa 3</h2>
+            <h2>Ícaro Nascimento</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-              nec augue at libero cursus varius a at quam.
+              Cursando a matéria de FrontEnd no Serratec.
               <br />
-              <a href="#">Link para o perfil</a>
+              <div class="d-flex justify-content-center">              
+                <a href="https://github.com/ikaro460" target="_blank" class="icon-link me-3">
+                  <i class="bi bi-github"></i>
+                </a>             
+                <a href="https://www.linkedin.com/in/icaro-gaspar/" target="_blank" class="icon-link">
+                  <i class="bi bi-linkedin"></i>
+                </a>
+              </div>
             </p>
           </div>
         </div>
 
         <div class="row mt-4">
           <div class="col-md-4">
-            <!-- Espaço para a foto da Pessoa 4 -->
-            <img src="Pessoa4.jpg" alt="Foto da Pessoa 4" class="img-fluid" />
+            <img src="../Imagens/FotosSobre/foto.jpg" alt="Foto do Igor" class="img-fluid" />
           </div>
           <div class="col-md-8">
-            <!-- Espaço para as informações da Pessoa 4 -->
-            <h2>Nome da Pessoa 4</h2>
+            <h2>Igor Araujo</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-              nec augue at libero cursus varius a at quam.
+              Cursando a matéria de FrontEnd no Serratec.
               <br />
-              <a href="#">Link para o perfil</a>
+              <div class="d-flex justify-content-center">              
+                <a href="https://github.com/Igor-Arauj0" target="_blank" class="icon-link me-3">
+                  <i class="bi bi-github"></i>
+                </a>             
+                <a href="https://www.linkedin.com/in/igor-prata-mendes-araujo-8b5b2928b/" target="_blank" class="icon-link">
+                  <i class="bi bi-linkedin"></i>
+                </a>
+              </div>
             </p>
           </div>
         </div>
 
         <div class="row mt-4">
           <div class="col-md-4">
-            <!-- Espaço para a foto da Pessoa 5 -->
-            <img src="Pessoa5.jpg" alt="Foto da Pessoa 5" class="img-fluid" />
+            <img src="../Imagens/FotosSobre/julia.jpeg" alt="Foto da Julia" class="img-fluid" />
           </div>
           <div class="col-md-8">
-            <!-- Espaço para as informações da Pessoa 5 -->
-            <h2>Nome da Pessoa 5</h2>
+            <h2>Julia Freitas</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-              nec augue at libero cursus varius a at quam.
+              Cursando a matéria de FrontEnd no Serratec.
               <br />
-              <a href="#">Link para o perfil</a>
+              <div class="d-flex justify-content-center">              
+                <a href="https://github.com/JuFMacedo" target="_blank" class="icon-link me-3">
+                  <i class="bi bi-github"></i>
+                </a>             
+                <a href="https://www.linkedin.com/in/julia-de-freitas-macedo-90858b185/" target="_blank" class="icon-link">
+                  <i class="bi bi-linkedin"></i>
+                </a>
+              </div>
             </p>
           </div>
         </div>
 
         <div class="row mt-4">
           <div class="col-md-4">
-            <!-- Espaço para a foto da Pessoa 6 -->
-            <img src="Pessoa6.jpg" alt="Foto da Pessoa 6" class="img-fluid" />
+            <img src="../Imagens/FotosSobre/lu.jpeg" alt="Foto da Lu" class="img-fluid" />
           </div>
           <div class="col-md-8">
-            <!-- Espaço para as informações da Pessoa 6 -->
-            <h2>Nome da Pessoa 6</h2>
+            <h2>Luciana Brand</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-              nec augue at libero cursus varius a at quam.
+              Cursando a matéria de FrontEnd no Serratec.
               <br />
-              <a href="#">Link para o perfil</a>
+              <div class="d-flex justify-content-center">              
+                <a href="https://github.com/lucianabrand" target="_blank" class="icon-link me-3">
+                  <i class="bi bi-github"></i>
+                </a>             
+                <a href="https://www.linkedin.com/in/lucianabrand/" target="_blank" class="icon-link">
+                  <i class="bi bi-linkedin"></i>
+                </a>
+              </div>
             </p>
           </div>
         </div>
       </div>
-    </main>
 
-    <footer>Grupo 3</footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/light-mode.js"></script>
   </body>
+  <footer class="fixarRodape">
+    <hr class="hr" />
+    <p>&copy; Guia Viajante (2023)</p>
+  </footer>
 </html>

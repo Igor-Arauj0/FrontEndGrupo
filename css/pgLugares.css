@@ -1,11 +1,186 @@
+:root {
+  /* FUNDOS */
+  --color-bg-primary: #161b22; /* Cor de fundo primária */
+  --color-bg-secondary: #343a43; /* Cor de fundo secundária */
+  --color-bg-black: black;
+
+  /* TEXTO */
+  --text-color: #fafbfc; /* Cor do texto primária */
+  --text-color-secondary: #8b949e; /* Cor do texto secundária */
+
+  /* Cores de destaque (exemplo) */
+  --color-red: #da3633; /* Vermelho */
+  --color-green: #3fb950; /* Verde */
+  --color-orange: #e36209; /* Laranja */
+  --white-3: #e7a100;
+
+  /* MODO DIURNO */
+  --color-bg-primary-day: #fafbfc; /* Cor do fundo primária dia */
+  --color-bg-secondary-day: #d1d5da; /* Cor do fundo secundária dia */
+  --text-color-day: #101012; /* Cor do texto primária dia */
+  --text-color-secondary-day: #f6f8fa; /* Cor do texto secundária dia */
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,100&display=swap");
 
-p {
-  font-family: "Roboto";
-  text-align: start;
-  font-size: 20px;
+/* CONFIGURACOES GERAIS */
+body {
+  background-color: var(--color-bg-primary);
+  color: var(--text-color);
+  min-width: none;
 }
 
 main {
-  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+p {
+  font-family: "Roboto";
+  font-size: 20px;
+}
+
+p,
+h2 {
+  text-align: center;
+}
+
+img {
+  max-width: 700px;
+  width: 100%;
+  object-fit: cover;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+/* PRIMEIRA IMAGEM */
+.text-center {
+  box-shadow: 0px 0px 15px 0px var(--text-color);
+}
+
+.text-center img {
+  max-width: 100%;
+  max-height: 92vh;
+}
+
+/* PRIMEIRO TEXTO */
+.mt-4 {
+  padding: 15px;
+}
+
+.mt-4 .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.titulo {
+  font-size: 44px;
+}
+
+/* SEGUNDA IMAGEM */
+.col-md-6.order-1,
+.col-md-6.order-2 {
+  width: 100%;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+/* VIDEO */
+.col-md-6.order-2 video {
+  object-fit: cover;
+  width: 100%;
+}
+
+/* LISTA DE POUSADAS */
+.pousadas-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pousadas-list li {
+  margin-bottom: 5px;
+  height: 200px;
+  width: 80%;
+  max-width: 800px;
+  list-style: none;
+  transition: 0.3s ease-in-out;
+  box-shadow: inset 0px 0px 35px 15px var(--color-bg-black);
+  cursor: pointer;
+  border-radius: 15px;
+  background-position: center;
+  background-size: cover;
+}
+
+.pousadas-list li a {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.pousadas-list .hover-titulo {
+  transition: 0.3s ease-in-out;
+  opacity: 1;
+  transform: scale(1.15);
+  margin-bottom: 0;
+  padding: 25px;
+  font-weight: 700;
+  text-shadow: 7px 7px 8px #000000;
+}
+
+@media (min-width: 700px) {
+  .pousadas-list li {
+    box-shadow: inset 0px 0px 35px 15px var(--color-bg-black);
+  }
+
+  .pousadas-list li:hover {
+    box-shadow: inset 0px 0px 35px 5px var(--color-bg-black);
+  }
+
+  .pousadas-list .hover-titulo {
+    opacity: 0;
+  }
+
+  .pousadas-list li:hover .hover-titulo {
+    opacity: 1;
+    transform: scale(1.15);
+  }
+}
+
+/* FOOTER */
+
+footer {
+  text-align: center;
+  background: var(--color-bg-black);
+  width: 100%;
+  height: 100px;
+  bottom: 0;
+  left: 0;
+}
+
+hr {
+  background-color: rgba(12, 180, 202, 0.702);
+  height: 2px;
+}
+.modo-claro {
+  --color-bg-primary: #fafbfc; /* Cor de fundo primária no modo claro */
+  --color-bg-secondary: #d1d5da; /* Cor de fundo secundária no modo claro */
+  --text-color: #101012; /* Cor do texto primária no modo claro */
+  --text-color-secondary: #f6f8fa; /* Cor do texto secundária no modo claro */
+  --color-bg-black: #f6f8fa; /* Cor de fundo preta no modo claro */
+  --navbar-bg-color: #fafbfc; /* Cor de fundo da barra de navegação no modo claro */
+  --navbar-text-color: #101012; /* Cor do texto da barra de navegação no modo claro */
+  transition: background-color 0.3s, color 0.3s;
 }

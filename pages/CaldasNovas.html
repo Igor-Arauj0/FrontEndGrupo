@@ -3,27 +3,165 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/CaldasNovas.css" />
+    <link rel="icon" href="../img lugares/mundo.png" type="image/x-icon" />
+
+    <!--BOOTSTRAP-->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+      defer
+    ></script>
+
+    <!--BOOTSTRAP ICONS-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+
+    <link rel="stylesheet" href="../css/pgLugares.css" />
+    <link rel="stylesheet" href="../css/navbar.css" />
+
     <title>GOIÁS - CALDAS NOVAS</title>
   </head>
 
-  <body>
+  <body id="pagina">
+    <header>
+      <!--NAV BAR-->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./home.html"
+            ><i class="bi bi-airplane-engines"></i
+          ></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./home.html"
+                  >Início</a
+                >
+              </li>
+
+              <!--DROPDOWN-->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Locais
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="../pages/Bonito.html"
+                      >Bonito</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../pages/CaldasNovas.html"
+                      >Caldas Novas</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../pages/fozIguaçu.html"
+                      >Foz do Iguaçu</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../pages/Gramado.html"
+                      >Gramado</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../pages/ibitipoca.html"
+                      >Ibitipoca</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../pages/jalapao.html"
+                      >Jalapão</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../pages/Jeri.html"
+                      >Jericoacoara</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../pages/Lençois.html"
+                      >Lençóis Maranhenses</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../pages/manaus.html"
+                      >Manaus</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../pages/rioJaneiro.html"
+                      >Rio de Janeiro</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <!--FIM DROPDOWN-->
+
+              <li class="nav-item nav-last">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="../pages/Sobre.html"
+                  >Sobre</a
+                >
+              </li>
+
+              <li class="nav-item nav-last">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="../pages/FaleConosco.html"
+                  >Fale Conosco</a
+                >
+              </li>
+            </ul>
+          </div>
+          <button style="background:none;" class="modo-claro"><img style="zoom: 8%;" src="../img lugares/icone generico de brilho.png" alt=""></button>
+        </div>
+      </nav>
+      <!--FIM NAV BAR-->
+    </header>
+
     <div class="text-center">
       <img
-        src="../Imagens/CALDAS NOVAS/CAPA.jpg"
+        src="../Imagens/CALDAS_NOVAS/caldas-novas-214-c.jpg"
         alt="Grande Piscina com um barco no meio "
         width="50%"
         height="50%"
       />
     </div>
 
-    <section class="mt-4">
+    <section class="mt-4 sobre">
       <h2>Sobre Caldas Novas:</h2>
 
       <p>
@@ -44,7 +182,7 @@
         <div class="row">
           <div class="col-md-6 order-1 mt-3">
             <img
-              src="../Imagens/CALDAS NOVAS/Caldas-Novas-1.jpg"
+              src="../Imagens/CALDAS_NOVAS/Caldas-Novas-1.jpg"
               alt="Piscina com água natural cristalina, com árvores em volta e céu escuro com estrelas"
               width="110%"
               height="auto"
@@ -53,7 +191,7 @@
           </div>
           <div class="col-md-6 order-2 mt-3">
             <img
-              src="../Imagens/CALDAS NOVAS/rio-quente.jpg"
+              src="../Imagens/CALDAS_NOVAS/rio-quente.jpg"
               alt="Piscina com água natural cristalina, com árvores em volta"
               width="100%"
               height="auto"
@@ -64,53 +202,64 @@
       </div>
     </section>
 
-    <section class="mt-4">
+    <section class="mt-4 pousadas">
       <h2>Pousadas e Hotéis em Caldas Novas:</h2>
       <p>
         Caldas Novas é um polo de turismo no centro-oeste brasileiro e tem uma
         grande variedade de locais para hospedagem.
       </p>
-      <ul>
-        <li>
-          <a href="https://www.rioquente.com.br/explorar/hoteis/hotel-turismo">
-            <h4>Rio Quente Resorts</h4></a
+      <ul class="pousadas-list">
+        <li
+          class="hover-img box"
+          style="background-image: url(../Imagens/CALDAS_NOVAS/rio-quente.jpg)"
+        >
+          <a
+            href="https://www.rioquente.com.br/explorar/hoteis/hotel-turismo"
+            target="_blank"
           >
+            <p class="hover-titulo">Rio Quente Resorts</p>
+          </a>
         </li>
-        <img
-          src="../Imagens/CALDAS NOVAS/Rio Quente Resorts.jpg"
-          alt="Hotel com fachada branca com piscina ao redor."
-          width="50%"
-          height="auto"
-          class="mb-4"
-        />
-        <li>
+
+        <li
+          class="hover-img box"
+          style="background-image: url(../Imagens/CALDAS_NOVAS/rio-quente.jpg)"
+        >
+          <a
+            href="https://www.rioquente.com.br/explorar/hoteis/hotel-turismo"
+            target="_blank"
+          >
+            <p class="hover-titulo">Rio Quente Resorts</p>
+          </a>
+        </li>
+
+        <li
+          class="hover-img box"
+          style="
+            background-image: url(../Imagens/CALDAS_NOVAS/Apartamentos\ Caldas\ Novas.jpg);
+          "
+        >
           <a
             href="https://www.booking.com/hotel/br/apartamentos-caldas-novas.html?aid=336111&label=GUIA-tabela-onde-ficar-Caldas_Novas-10107__&lang=pt-br"
-            ><h4>Apartamentos Caldas Novas</h4>
-          </a>
-        </li>
-        <img
-          src="../Imagens/CALDAS NOVAS/Apartamentos Caldas Novas.jpg"
-          alt="Complexo de apartamentos que são quartos de hotéis com uma grande piscina no jardim"
-          width="50%"
-          height="auto"
-          class="mb-4"
-        />
-        <li>
-          <a
-            href="https://www.booking.com/hotel/br/flat-prive-das-thermas-2.html?aid=336111&label=GUIA-tabela-onde-ficar-Caldas_Novas-10107__&lang=pt-br
-            "
+            target="_blank"
           >
-            <h4>Flat Prive das Thermas II - R3 Caldas</h4>
+            <p class="hover-titulo">Apartamentos Caldas Novas</p>
           </a>
         </li>
-        <img
-          src="../Imagens/CALDAS NOVAS/Flat Prive das Thermas II.jpg"
-          alt="Complexo de apartamentos que são quartos de hotéis com uma grande piscina no jardim"
-          width="50%"
-          height="auto"
-          class="mb-4"
-        />
+
+        <li
+          class="hover-img box"
+          style="
+            background-image: url(../Imagens/CALDAS_NOVAS/Flat\ Prive\ das\ Thermas\ II.jpg);
+          "
+        >
+          <a
+            href="https://www.booking.com/hotel/br/flat-prive-das-thermas-2.html?aid=336111&label=GUIA-tabela-onde-ficar-Caldas_Novas-10107__&lang=pt-br"
+            target="_blank"
+          >
+            <p class="hover-titulo">Flat Prive das Thermas II - R3 Caldas</p>
+          </a>
+        </li>
       </ul>
     </section>
 
@@ -137,7 +286,7 @@
             20 minutos.
           </p>
           <img
-            src="../Imagens/CALDAS NOVAS/Parque das Fontes.png"
+            src="../Imagens/CALDAS_NOVAS/Parque das Fontes.png"
             alt="Piscina Natural ao entardecer."
             width="50%"
             height="auto"
@@ -156,7 +305,7 @@
           </p>
 
           <img
-            src="../Imagens/CALDAS NOVAS/hot park.png"
+            src="../Imagens/CALDAS_NOVAS/hot park.png"
             alt="Cadeiras na beirada da piscina com crianças brincando dentro da piscina"
             width="50%"
             height="auto"
@@ -199,5 +348,10 @@
         faz presente e as chuvas são raras.
       </p>
     </section>
+    <footer class="fixarRodape">
+      <hr class="hr" />
+      <p>&copy; Guia Viajante (2023)</p>
+    </footer>
+    <script src="../js/light-mode.js"></script>
   </body>
 </html>

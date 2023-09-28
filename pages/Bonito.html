@@ -3,20 +3,157 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/Bonito.css" />
+    <link rel="icon" href="../img lugares/mundo.png" type="image/x-icon" />
+
+    <!--BOOTSTRAP-->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <!--BOOTSTRAP ICONS-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/pgLugares.css" />
+
     <title>MATO GROSSO DO SUL - BONITO</title>
   </head>
 
-  <body>
-    <div class="text-center">
+  <body id="pagina">
+    <header>
+      <!--NAV BAR-->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./home.html"
+            ><i class="bi bi-airplane-engines"></i
+          ></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./home.html"
+                  >Início</a
+                >
+              </li>
+
+              <!--DROPDOWN-->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Locais
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="../pages/Bonito.html"
+                      >Bonito</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../pages/CaldasNovas.html"
+                      >Caldas Novas</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../pages/fozIguaçu.html"
+                      >Foz do Iguaçu</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../pages/Gramado.html"
+                      >Gramado</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../pages/ibitipoca.html"
+                      >Ibitipoca</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../pages/jalapao.html"
+                      >Jalapão</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../pages/Jeri.html"
+                      >Jericoacoara</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../pages/Lençois.html"
+                      >Lençóis Maranhenses</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../pages/manaus.html"
+                      >Manaus</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../pages/rioJaneiro.html"
+                      >Rio de Janeiro</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <!--FIM DROPDOWN-->
+
+              <li class="nav-item nav-last">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="../pages/Sobre.html"
+                  >Sobre</a
+                >
+              </li>
+
+              <li class="nav-item nav-last">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="../pages/FaleConosco.html"
+                  >Fale Conosco</a
+                >
+              </li>
+            </ul>
+          </div>
+          <button style="background:none;" class="modo-claro"><img style="zoom: 8%;" src="../img lugares/icone generico de brilho.png" alt=""></button>
+        </div>
+      </nav>
+      <!--FIM NAV BAR-->
+    </header>
+
+    <div class="text-center sobre">
       <img
-        src="../Imagens/BONITO/CAPA.jpg"
+        src="../Imagens/BONITO/Bonito.jpg"
         alt="Gruta Lagoa Azul "
         width="50%"
         height="50%"
@@ -64,7 +201,7 @@
       </div>
     </section>
 
-    <section class="mt-4">
+    <section class="mt-4 pousadas">
       <h2>Pousadas e Hotéis em Bonito:</h2>
       <p>
         Bonito tem uma rede hoteleira variada, que inclui pousadas simples,
@@ -82,48 +219,44 @@
         chegar ao hotel e ter a opção de relaxar em uma piscina é renovador!
         Depois da piscina você estará pronto para curtir um bom jantar!
       </p>
-      <ul>
-        <li>
+      <ul class="pousadas-list">
+        <li
+          class="hover-img box"
+          style="background-image: url(../Imagens/BONITO/Zagaia\ EcoResort.jpg)"
+        >
           <a
             href="https://www.booking.com/hotel/br/pousada-aguas-de-bonito.pt-br.html?aid=335683&label=MD-POST-bonito-ms-178411__"
+            target="_blank"
           >
-            <h4>Zagaia EcoResort</h4></a
-          >
-        </li>
-        <img
-          src="../Imagens/BONITO/Zagaia EcoResort.jpg"
-          alt="Hotel com fachada em vidro e madeira, com coqueiros."
-          width="50%"
-          height="auto"
-          class="mb-4"
-        />
-        <li>
-          <a
-            href="https://www.booking.com/hotel/br/pousada-aguas-de-bonito.pt-br.html?aid=335683&label=MD-POST-bonito-ms-178411__"
-            ><h4>Hotel Pousada Águas de Bonito</h4>
+            <p class="hover-titulo">Zagaia EcoResort</p>
           </a>
         </li>
-        <img
-          src="../Imagens/BONITO/Hotel Pousada Águas de Bonito.jpg"
-          alt="Hotel com piscinas particulares, hotel cercado por verde de árvores, gramas e vegetação."
-          width="50%"
-          height="auto"
-          class="mb-4"
-        />
-        <li>
+
+        <li
+          class="hover-img box"
+          style="
+            background-image: url(../Imagens/BONITO/Hotel\ Pousada\ Águas\ de\ Bonito.jpg);
+          "
+        >
+          <a
+            href="https://www.booking.com/hotel/br/pousada-aguas-de-bonito.pt-br.html?aid=335683&label=MD-POST-bonito-ms-178411__"
+            target="_blank"
+          >
+            <p class="hover-titulo">Hotel Pousada Águas de Bonito</p>
+          </a>
+        </li>
+
+        <li
+          class="hover-img box"
+          style="background-image: url(../Imagens/BONITO/Wetiga\ Hotel.jpg)"
+        >
           <a
             href="https://www.booking.com/hotel/br/wetiga.pt-br.html?aid=335683&label=MD-POST-b"
+            target="_blank"
           >
-            <h4>Wetiga Hotel</h4>
+            <p class="hover-titulo">Wetiga Hotel</p>
           </a>
         </li>
-        <img
-          src="../Imagens/BONITO/Wetiga Hotel.jpg"
-          alt="Hotel com piscina particular"
-          width="50%"
-          height="auto"
-          class="mb-4"
-        />
       </ul>
     </section>
 
@@ -243,5 +376,10 @@
         com dias nem tão quentes e nem tão frios, geralmente com noites frescas.
       </p>
     </section>
+    <footer class="fixarRodape">
+      <hr class="hr" />
+      <p>&copy; Guia Viajante (2023)</p>
+    </footer>
+    <script src="../js/light-mode.js"></script>
   </body>
 </html>
