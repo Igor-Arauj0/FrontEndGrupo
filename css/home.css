@@ -45,7 +45,7 @@ main {
   height: 100%;
 }
 
-footer{
+footer {
   text-align: center;
   background: #000000;
   width: 100%;
@@ -54,7 +54,7 @@ footer{
   left: 0;
 }
 
-hr{
+hr {
   background-color: rgba(12, 180, 202, 0.702);
   height: 2px;
 }
@@ -65,21 +65,17 @@ hr{
   gap: 10px;
   max-width: 800px;
   margin: 20px auto;
-  
-  
 }
 
 .foto {
   overflow: hidden;
   border: 1px solid #ddd;
-  
-  
 }
 
 .foto img {
   width: 100%;
   height: auto;
-  display: block;  
+  display: block;
 }
 
 .grid {
@@ -89,7 +85,6 @@ hr{
   grid-auto-rows: 200px; /* Altura fixa das linhas */
   gap: 10px;
   width: 1100px;
-  
 }
 
 .item {
@@ -101,20 +96,59 @@ hr{
   font-weight: bold;
   color: white;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  
 }
 
 /* Estilos específicos para cada item */
-.item1 { grid-column: span 2; grid-row: span 2; zoom: 89%; }
-.item2 { grid-column: span 1; grid-row: span 2; zoom: 60%;}
-.item3 { grid-column: span 1; grid-row: span 3; zoom: 120%;}
-.item4 { grid-column: span 2; grid-row: span 1; zoom: 45%;}
-.item5 { grid-column: span 2; grid-row: span 2; zoom: 92%;}
-.item6 { grid-column: span 1; grid-row: span 2; zoom: 73%;}
-.item7 { grid-column: span 1; grid-row: span 2; zoom: 60%;}
-.item8 { grid-column: span 1; grid-row: span 2; zoom: 66%;}
-.item9 { grid-column: span 1; grid-row: span 2; zoom: 60%;}
-.item10 { grid-column: span 2; grid-row: span 2; zoom: 73%;}
+.item1 {
+  grid-column: span 2;
+  grid-row: span 2;
+  zoom: 89%;
+}
+.item2 {
+  grid-column: span 1;
+  grid-row: span 2;
+  zoom: 90%;
+}
+.item3 {
+  grid-column: span 1;
+  grid-row: span 3;
+  zoom: 80%;
+}
+.item4 {
+  grid-column: span 2;
+  grid-row: span 1;
+  zoom: 45%;
+}
+.item5 {
+  grid-column: span 2;
+  grid-row: span 2;
+  zoom: 92%;
+}
+.item6 {
+  grid-column: span 1;
+  grid-row: span 2;
+  zoom: 73%;
+}
+.item7 {
+  grid-column: span 1;
+  grid-row: span 2;
+  zoom: 80%;
+}
+.item8 {
+  grid-column: span 1;
+  grid-row: span 2;
+  zoom: 66%;
+}
+.item9 {
+  grid-column: span 1;
+  grid-row: span 2;
+  zoom: 70%;
+}
+.item10 {
+  grid-column: span 2;
+  grid-row: span 2;
+  zoom: 73%;
+}
 
 /* Estilos para as imagens dentro dos itens */
 .item img:hover {
@@ -124,8 +158,127 @@ hr{
   transform-origin: center center;
   transform: scale(1.1);
 }
-  
-  .mosaico{ 
+
+/*Estilo para posicionar o texto acima das imagens*/
+
+.item {
+  position: relative;
+}
+
+.cidade-bonito {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  padding: 5px 10px;
+  font-size: 200%;
+  font-weight: bold;
+  z-index: 1;
+}
+.cidade-caldas {
+  position: absolute;
+  top: 5%;
+  left: 20px;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  padding: 5px 10px;
+  font-size: 200%;
+  font-weight: bold;
+  z-index: 1;
+}
+
+.cidade-foz {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  padding: 5px 10px;
+  font-size: 200%;
+  font-weight: bold;
+  z-index: 1;
+}
+.cidade-gramado {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  padding: 5px 10px;
+  font-size: 350%;
+  font-weight: bold;
+  z-index: 1;
+}
+.cidade-jalapao {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  padding: 5px 10px;
+  font-size: 200%;
+  font-weight: bold;
+  z-index: 1;
+}
+.cidade-ibitipoca {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  padding: 5px 10px;
+  font-size: 200%;
+  font-weight: bold;
+  z-index: 1;
+}
+.cidade-jeri {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  padding: 5px 10px;
+  font-size: 200%;
+  font-weight: bold;
+  z-index: 1;
+}
+.cidade-rio {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  padding: 5px 10px;
+  font-size: 200%;
+  font-weight: bold;
+  z-index: 1;
+}
+.cidade-manaus {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  padding: 5px 10px;
+  font-size: 200%;
+  font-weight: bold;
+  z-index: 1;
+}
+
+.cidade-lencois {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  padding: 5px 10px;
+  font-size: 200%;
+  font-weight: bold;
+  z-index: 1;
+}
+
+.mosaico {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
@@ -171,7 +324,7 @@ hr{
   transform: scale(1);
 }
 
-.item img{
+.item img {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   transition: box-shadow 0.3s ease;
 }
