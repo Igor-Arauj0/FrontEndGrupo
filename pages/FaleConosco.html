@@ -86,7 +86,7 @@
                       >Caldas Novas</a
                     >
                   </li>
-                  
+
                   <li>
                     <a class="dropdown-item" href="../pages/Gramado.html"
                       >Gramado</a
@@ -114,7 +114,6 @@
                   >Sobre</a
                 >
               </li>
-              </li>
             </ul>
           </div>
         </div>
@@ -122,7 +121,13 @@
       <!--FIM NAV BAR-->
     </header>
 
-    <main>
+    <main
+      id="random-image"
+      alt="Random Landscape Image"
+      style="
+        background-image: url(https://images.unsplash.com/photo-1476610182048-b716b8518aae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDg5OTh8MHwxfHJhbmRvbXx8fHx8fHx8fDE2OTU5MzAzNzF8&ixlib=rb-4.0.3&q=80&w=1080);
+      "
+    >
       <section class="formulario">
         <div class="interface">
           <form id="myForm" action="">
@@ -148,16 +153,54 @@
               required
             ></textarea>
 
-            <button type="button" onclick="enviarFormulario()" class="btn btn-primary btn-enviar">ENVIAR</button>
+            <button
+              type="button"
+              onclick="enviarFormulario()"
+              class="btn btn-primary btn-enviar"
+            >
+              ENVIAR
+            </button>
           </form>
         </div>
         <!--interface-->
       </section>
       <!--formulario-->
+
+      <!--BOTAO API-->
+      <div class="api-div">
+        <button
+          class="btn btn-primary btn-enviar btn-api"
+          onclick="getRandomLandscape()"
+        >
+          Mudar background
+        </button>
+      </div>
+      <!--FIM BOTAO API-->
     </main>
     <footer class="fixarRodape">
       <hr class="hr" />
       <p>&copy; Rota das Maravilhas (2023)</p>
     </footer>
+    <script>
+      const accessKey = "r24jFh8KwS0cOY6opmY1RlOGkVjsuAoMWZ6-esKlKSQ";
+      const apiUrl =
+        "https://api.unsplash.com/photos/random?query=landscape&orientation=landscape";
+
+      async function getRandomLandscape() {
+        console.log("oi 1");
+        try {
+          const response = await fetch(`${apiUrl}&client_id=${accessKey}`);
+          const data = await response.json();
+
+          console.log(data.urls.regular);
+          if (data && data && data.urls && data.urls.regular) {
+            const randomImage = document.getElementById("random-image");
+            randomImage.style = `background-image: url(${data.urls.regular});`;
+          }
+        } catch (error) {
+          console.error("Error fetching image:", error);
+        }
+      }
+    </script>
   </body>
 </html>
