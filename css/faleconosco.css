@@ -127,8 +127,8 @@ form .btn-enviar {
 }
 
 .btn-enviar:hover {
-  transform: scale(1.02);
   box-shadow: 0px 0px 5px 0px var(--color-orange-secondary);
+  background-color: var(--color-orange-secondary);
 }
 
 @media (max-width: 500px) {
@@ -139,7 +139,7 @@ form .btn-enviar {
   }
 }
 
-footer{
+footer {
   text-align: center;
   background: #000000;
   width: 100%;
@@ -148,7 +148,7 @@ footer{
   left: 0;
 }
 
-hr{
+hr {
   background-color: rgba(12, 180, 202, 0.702);
   height: 2px;
 }
