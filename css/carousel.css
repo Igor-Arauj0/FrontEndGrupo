@@ -5,25 +5,25 @@
 
 .carousel-inner {
   height: 100%;
-  border-radius: 30px;
 }
 
 .carousel-item {
   height: 100%;
-  border-radius: 30px;
 }
 
 .carousel-item img {
   height: 100%;
   object-fit: cover;
-  border-radius: 30px;
 }
 
 @media (min-width: 500px) {
   .slide {
     width: 75%;
     height: 80%;
-    
+  }
+
+  .carousel-inner {
+    border-radius: 30px;
   }
 }
 
@@ -37,6 +37,6 @@
 .carousel-item img:not(:hover) {
   flex: 0 0 100%;
   transition: transform 0.2s ease;
-  transform-origin: center center; 
-  transform: scale(1); 
+  transform-origin: center center;
+  transform: scale(1);
 }
