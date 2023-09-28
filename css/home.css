@@ -41,6 +41,7 @@ h1 {
   font-family: "Roboto";
   font-size: 300%;
   font-weight: bold;
+  color: var(--text-color);
 }
 
 main {
@@ -344,6 +345,7 @@ hr {
   --text-color-secondary: #777;
   --color-bg-black: white;
   transition: background-color 0.3s, color 0.3s;
+  color: var(--text-color-day);
 }
 
 /* Estilos para a barra de navegação */
