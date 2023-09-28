@@ -188,8 +188,15 @@
       const apiUrl =
         "https://api.unsplash.com/photos/random?query=landscape&orientation=landscape";
 
+      const arrUrls = [
+        "https://images.unsplash.com/photo-1476610182048-b716b8518aae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDg5OTh8MHwxfHJhbmRvbXx8fHx8fHx8fDE2OTU5MzAzNzF8&ixlib=rb-4.0.3&q=80&w=1080",
+        "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDg5OTh8MHwxfHJhbmRvbXx8fHx8fHx8fDE2OTU5MzQ2OTh8&ixlib=rb-4.0.3&q=80&w=1080",
+      ];
+
       async function getRandomLandscape() {
         console.log("oi 1");
+
+        // TENTA REQUISITAR IMAGEM DA API
         try {
           const response = await fetch(`${apiUrl}&client_id=${accessKey}`);
           const data = await response.json();
@@ -201,6 +208,17 @@
           }
         } catch (error) {
           console.error("Error fetching image:", error);
+
+          // PERCORRER ARRAY DE URLS LOCAIS
+          const randomImage = document.getElementById("random-image");
+          for (const element of arrUrls) {
+            console.log(randomImage.style.backgroundImage);
+            console.log(`url("${element}")`);
+            if (`url("${element}")` !== randomImage.style.backgroundImage) {
+              randomImage.style = `background-image: url(${element});`;
+              break;
+            }
+          }
         }
       }
     </script>
