@@ -66,7 +66,3 @@ Com uma área tão grande e uma grande variedade de coisas para fazer, planejar 
 
 👥[Voltar ao Índice](#índice)
 <br><br>
-
-<p alig="center">
-  <img loading="lazy" src="http://img.shields.io/static/v1?label=STATUS&message=FrontEnd%20-%20Grupo3&color=GREEN&style=for-the-badge"/>
-</p>
