@@ -102,12 +102,12 @@ hr {
 .item1 {
   grid-column: span 2;
   grid-row: span 2;
-  zoom: 89%;
+  zoom: 90%;
 }
 .item2 {
   grid-column: span 1;
   grid-row: span 2;
-  zoom: 90%;
+  zoom: 92%;
 }
 .item3 {
   grid-column: span 1;
@@ -178,7 +178,7 @@ hr {
 }
 .cidade-caldas {
   position: absolute;
-  top: 5%;
+  top: 4%;
   left: 20px;
   background-color: rgba(0, 0, 0, 0);
   color: white;
