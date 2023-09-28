@@ -87,10 +87,24 @@
                       >Caldas Novas</a
                     >
                   </li>
-
+                  <li>
+                    <a class="dropdown-item" href="../pages/fozIguaçu.html"
+                      >Foz do Iguaçu</a
+                    >
+                  </li>
                   <li>
                     <a class="dropdown-item" href="../pages/Gramado.html"
                       >Gramado</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../pages/ibitipoca.html"
+                      >Ibitipoca</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../pages/jalapao.html"
+                      >Jalapão</a
                     >
                   </li>
                   <li>
@@ -101,6 +115,16 @@
                   <li>
                     <a class="dropdown-item" href="../pages/Lençois.html"
                       >Lençóis Maranhenses</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../pages/manaus.html"
+                      >Manaus</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../pages/rioJaneiro.html"
+                      >Rio de Janeiro</a
                     >
                   </li>
                 </ul>
@@ -182,15 +206,22 @@
     </main>
     <footer class="fixarRodape">
       <hr class="hr" />
-      <p>&copy; Rota das Maravilhas (2023)</p>
+      <p>&copy; Guia Viajante (2023)</p>
     </footer>
     <script>
       const accessKey = "r24jFh8KwS0cOY6opmY1RlOGkVjsuAoMWZ6-esKlKSQ";
       const apiUrl =
         "https://api.unsplash.com/photos/random?query=landscape&orientation=landscape";
 
+      const arrUrls = [
+        "https://images.unsplash.com/photo-1476610182048-b716b8518aae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDg5OTh8MHwxfHJhbmRvbXx8fHx8fHx8fDE2OTU5MzAzNzF8&ixlib=rb-4.0.3&q=80&w=1080",
+        "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDg5OTh8MHwxfHJhbmRvbXx8fHx8fHx8fDE2OTU5MzQ2OTh8&ixlib=rb-4.0.3&q=80&w=1080",
+      ];
+
       async function getRandomLandscape() {
         console.log("oi 1");
+
+        // TENTA REQUISITAR IMAGEM DA API
         try {
           const response = await fetch(`${apiUrl}&client_id=${accessKey}`);
           const data = await response.json();
@@ -202,6 +233,17 @@
           }
         } catch (error) {
           console.error("Error fetching image:", error);
+
+          // PERCORRER ARRAY DE URLS LOCAIS
+          const randomImage = document.getElementById("random-image");
+          for (const element of arrUrls) {
+            console.log(randomImage.style.backgroundImage);
+            console.log(`url("${element}")`);
+            if (`url("${element}")` !== randomImage.style.backgroundImage) {
+              randomImage.style = `background-image: url(${element});`;
+              break;
+            }
+          }
         }
       }
     </script>

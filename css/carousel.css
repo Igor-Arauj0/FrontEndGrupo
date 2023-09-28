@@ -18,8 +18,8 @@
 
 @media (min-width: 500px) {
   .slide {
-    width: 75%;
-    height: 80%;
+    width: 60%;
+    height: 20%;
   }
 
   .carousel-inner {
