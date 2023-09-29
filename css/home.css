@@ -355,7 +355,7 @@ hr {
   transition: background-color 0.3s, color 0.3s;
 }
 
-@media(max-width: 1480px){
+@media(max-width: 1120px){
   .grid{
     display: none;
   }

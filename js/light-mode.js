@@ -17,7 +17,7 @@ modoClaroBtn.addEventListener("click", () => {
     pagina.style.color = "black";
 
     // Atualiza as variáveis CSS para a barra de navegação
-    navbar.style.backgroundColor = "white";
+    navbar.style.backgroundColor = "var(--color-bg-secondary-day)";
     navbar.style.color = "black";
 
     // Atualiza as variáveis CSS para o footer
